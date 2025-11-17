@@ -1,0 +1,33 @@
+GET http://localhost:5043/games
+
+###
+
+GET http://localhost:5043/games/5
+
+###
+
+POST http://localhost:5043/games
+Content-Type: application/json
+
+{
+    "name" : "Red rust",
+    "GenreId" : 3,
+    "price" : 8.99,
+    "releaseDate" : "2022-12-15"
+}
+
+###
+
+PUT http://localhost:5043/games/1
+Content-Type: application/json
+
+{
+    "name" : "Half-Life 2",
+    "genre" : 1,
+    "price" : 18.99,
+    "releaseDate" : "2005-11-22"
+}
+
+###
+
+DELETE http://localhost:5043/games/2
